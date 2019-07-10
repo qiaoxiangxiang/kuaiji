@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>专业建设-本科人才培养</title>
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/jianshe_rencai/fawuBan.css">
+    <link rel="stylesheet" href="../../css/kuaiji_fangan/zhuanye.css">
+</head>
+<body>
+    <div class="appBody">
+        <div class="header"></div>
+        <div class="content">
+            <div class="topImg">
+                <div class="zhuanyeNavBox">
+                    <div class="zhuanyeNav">
+                        <span class="zhuanyeNavList zhuanyeNavActive">课程体系</span>
+                        <span class="zhuanyeNavList">教学质量保障体系</span>
+                    </div>
+                </div>
+            </div>
+            <img class="zhuanyeImg" src="../../img/kuaiji_fangan/benke/zhuanye_03_03.png" alt="">
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+<script src="../../js/jquery-2.1.4.js"></script>
+<script src="../../js/common.js"></script>
+<script>
+    $(".zhuanyeNavList").click(function(){
+        $(".zhuanyeNavActive").removeClass("zhuanyeNavActive");
+        $(this).addClass("zhuanyeNavActive");
+        if($(this).index()){
+            $(".zhuanyeImg").attr("src","../../img/kuaiji_fangan/benke/zhuanye_03.png")
+        }else{
+            $(".zhuanyeImg").attr("src","../../img/kuaiji_fangan/benke/zhuanye_03_03.png")
+        }
+    })
+</script>
+</html>
